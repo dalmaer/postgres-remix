@@ -1,6 +1,16 @@
-# Remix
+# Remix with Vercel Postgres
 
-This directory is a brief example of a [Remix](https://remix.run/docs) site that can be deployed to Vercel with zero configuration.
+This project was a love child of the [base Remix and Vercel example](https://github.com/vercel/vercel/tree/main/examples/remix) that was created by the amazing [TooTallNate](https://twitter.com/tootallnate), and the Vercel Storage examples from Next and SvelteKit.
+
+It is a hacky version of how to use [Remix](https://remix.run/docs) with [Vercel Postgres](https://vercel.com/storage/postgres).
+
+You can craete a new remix project using this as a starter via
+
+```sh
+npx create-remix@latest --template https://github.com/dalmaer/postgres-remix postgres-remix
+```
+
+And you will want to copy the `.env.example` to `.env` and fill in the Postgres environment variables from your Vercel deployment.
 
 ## Deploy Your Own
 
