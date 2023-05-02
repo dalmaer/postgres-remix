@@ -16,7 +16,7 @@ And you will want to copy the `.env.example` to `.env` and fill in the Postgres 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dalmaer/postgres-remix&template=remix)
 
-_Live Example: https://postgres-remix.vercel.app _
+_Live Example: https://postgres-remix.vercel.app_
 
 You can also deploy using the [Vercel CLI](https://vercel.com/cli):
 
