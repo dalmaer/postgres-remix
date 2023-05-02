@@ -4,9 +4,9 @@ This directory is a brief example of a [Remix](https://remix.run/docs) site that
 
 ## Deploy Your Own
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/remix&template=remix)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dalmaer/postgres-remix&template=remix)
 
-_Live Example: https://remix-run-template.vercel.app_
+_Live Example: https://postgres-remix.vercel.app _
 
 You can also deploy using the [Vercel CLI](https://vercel.com/cli):
 

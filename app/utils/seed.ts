@@ -21,6 +21,16 @@ export async function seed() {
       `,
     sql`
           INSERT INTO users (name, email, image)
+          VALUES ('Michael Jackson', 'michael@remix.run', 'https://pbs.twimg.com/profile_images/1529950053317505024/D2kf-q6Q_400x400.jpg')
+          ON CONFLICT (email) DO NOTHING;
+      `,
+    sql`
+          INSERT INTO users (name, email, image)
+          VALUES ('Ryan Florence', 'ryan@remix.run', 'https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png')
+          ON CONFLICT (email) DO NOTHING;
+    `,
+    sql`
+          INSERT INTO users (name, email, image)
           VALUES ('Guillermo Rauch', 'rauchg@vercel.com', 'https://pbs.twimg.com/profile_images/1576257734810312704/ucxb4lHy_400x400.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
@@ -35,7 +45,7 @@ export async function seed() {
           ON CONFLICT (email) DO NOTHING;
       `,
   ]);
- 
+
   console.log(`Seeded ${users.length} users`);
 
   return {
