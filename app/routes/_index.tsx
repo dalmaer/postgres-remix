@@ -14,8 +14,6 @@ export const loader = async () => {
 export const meta: V2_MetaFunction = () => {
   return [
     { title: "Postgres Remix Demo" },
-    { charset: "utf-8" },
-    { viewport: "width=device-width,initial-scale=1" },
     { description: "A simple Remix app with Vercel Postgres as the database" },
   ];
 };
