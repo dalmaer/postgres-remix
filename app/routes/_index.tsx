@@ -1,12 +1,23 @@
 import { Link, useLoaderData } from "@remix-run/react";
+import type { V2_MetaFunction } from "@vercel/remix";
 import { json } from "@vercel/remix";
 import ExpandingArrow from "~/components/expanding-arrow";
 import TablePlaceholder from "~/components/table-placeholder";
 import Table from "~/components/table";
+
 import { getUsers } from "~/models/user.server";
 
 export const loader = async () => {
   return json(await getUsers());
+};
+
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: "Postgres Remix Demo" },
+    { charset: "utf-8" },
+    { viewport: "width=device-width,initial-scale=1" },
+    { description: "A simple Remix app with Vercel Postgres as the database" },
+  ];
 };
 
 export default function Index() {
